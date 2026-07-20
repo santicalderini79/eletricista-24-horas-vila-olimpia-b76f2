@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+
+<html class="light" lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Eletro-Vila | Eletricista 24 Horas Vila Olímpia</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;600;700;800&family=Inter:wght@400;600&family=JetBrains+Mono:wght@600&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@100..900&family=Inter:wght@100..900&family=JetBrains+Mono:wght@100..900&display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-container": "#f0eded",
+                        "on-background": "#1b1c1c",
+                        "surface-bright": "#fcf9f8",
+                        "inverse-primary": "#ffb4ac",
+                        "tertiary": "#7b5500",
+                        "on-primary-fixed": "#410002",
+                        "on-surface-variant": "#5b403d",
+                        "on-surface": "#1b1c1c",
+                        "surface-variant": "#e5e2e1",
+                        "on-primary-fixed-variant": "#93000d",
+                        "on-secondary-fixed": "#001c38",
+                        "tertiary-fixed": "#ffdeac",
+                        "inverse-on-surface": "#f3f0ef",
+                        "error-container": "#ffdad6",
+                        "on-secondary-container": "#003663",
+                        "on-tertiary": "#ffffff",
+                        "background": "#fcf9f8",
+                        "primary-container": "#db322f",
+                        "primary-fixed-dim": "#ffb4ac",
+                        "outline": "#906f6c",
+                        "on-secondary": "#ffffff",
+                        "secondary-fixed": "#d3e4ff",
+                        "error": "#ba1a1a",
+                        "inverse-surface": "#303030",
+                        "surface-container-lowest": "#ffffff",
+                        "on-error": "#ffffff",
+                        "surface-container-high": "#eae7e7",
+                        "on-tertiary-container": "#fffbff",
+                        "primary-fixed": "#ffdad6",
+                        "on-secondary-fixed-variant": "#004881",
+                        "on-tertiary-fixed": "#281900",
+                        "surface-container-highest": "#e5e2e1",
+                        "on-error-container": "#93000a",
+                        "secondary-container": "#47a1ff",
+                        "on-primary-container": "#fffbff",
+                        "surface-container-low": "#f6f3f2",
+                        "secondary": "#0060a8",
+                        "tertiary-fixed-dim": "#ffba38",
+                        "surface": "#fcf9f8",
+                        "outline-variant": "#e4beb9",
+                        "tertiary-container": "#9b6b00",
+                        "on-primary": "#ffffff",
+                        "primary": "#b7131a",
+                        "surface-tint": "#bb171c",
+                        "surface-dim": "#dcd9d9",
+                        "on-tertiary-fixed-variant": "#604100",
+                        "secondary-fixed-dim": "#a2c9ff"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0rem",
+                        "lg": "0rem",
+                        "xl": "0rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "margin-mobile": "16px",
+                        "unit": "8px",
+                        "stack-lg": "48px",
+                        "stack-md": "24px",
+                        "container-max": "1200px",
+                        "section-padding": "80px",
+                        "gutter": "24px",
+                        "stack-sm": "8px"
+                    },
+                    "fontFamily": {
+                        "display": ["Hanken Grotesk"],
+                        "cta": ["Hanken Grotesk"],
+                        "display-mobile": ["Hanken Grotesk"],
+                        "headline-lg": ["Hanken Grotesk"],
+                        "headline-lg-mobile": ["Hanken Grotesk"],
+                        "body-md": ["Inter"],
+                        "body-lg": ["Inter"],
+                        "label-caps": ["JetBrains Mono"]
+                    },
+                    "fontSize": {
+                        "display": ["48px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "800"}],
+                        "cta": ["20px", {"lineHeight": "1", "letterSpacing": "0.01em", "fontWeight": "700"}],
+                        "display-mobile": ["36px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "800"}],
+                        "headline-lg": ["32px", {"lineHeight": "1.2", "fontWeight": "700"}],
+                        "headline-lg-mobile": ["24px", {"lineHeight": "1.2", "fontWeight": "700"}],
+                        "body-md": ["16px", {"lineHeight": "1.5", "fontWeight": "400"}],
+                        "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "label-caps": ["14px", {"lineHeight": "1", "letterSpacing": "0.05em", "fontWeight": "600"}]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+        .emergency-shadow {
+            box-shadow: 4px 4px 0px 0px #212121;
+        }
+        .bento-card {
+            border: 2px solid #1b1c1c;
+            background: #ffffff;
+            transition: transform 0.1s ease;
+        }
+        .bento-card:active {
+            transform: scale(0.98);
+        }
+        .live-pulse {
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            background: #db322f;
+            animation: pulse 1.5s infinite;
+        }
+        @keyframes pulse {
+            0% { opacity: 1; transform: scale(1); }
+            50% { opacity: 0.4; transform: scale(1.2); }
+            100% { opacity: 1; transform: scale(1); }
+        }
+        html { scroll-behavior: smooth; }
+    </style>
+</head>
+<body class="bg-[#F5F7FA] text-on-background font-body-md selection:bg-primary selection:text-white">
+<!-- TopNavBar -->
+<nav class="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-b-2 border-on-background">
+<div class="flex justify-between items-center w-full px-margin-mobile md:px-gutter max-w-container-max mx-auto h-20">
+<div class="flex items-center gap-3">
+<img alt="Eletricista 24h Vila Olímpia" class="h-12 w-12 object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDxpi48BhT0TLSKYKfssY4SdeHQA1rTGI-J5dDcDmn0Di2-ZzXbRB1Yd-bc2pmuFy1dLGRz-qTkBXifKHRLig2jM1EHLcATWC30TH1pmr8bWJgPdrbfJOSMVstrBAh4klmxLCQW6aYA9wuRw40BND89KJX439t0kaz6Z1-onMj9DQbAp9ZFDzOS9lHP5CCPxUhyMsq81z-itPbgLTJnJsHNy33TfZoQpkXqEWBhWOpW9yW_Pnx6t52vXeDF_VX8i4-VouHJV5X0tA8"/>
+<span class="font-display text-headline-lg font-extrabold text-on-background tracking-tighter hidden sm:block">ELETRO-VILA</span>
+</div>
+<div class="hidden md:flex items-center gap-stack-md">
+<a class="text-on-surface-variant font-label-caps hover:text-primary transition-colors duration-200" href="#servicos">Serviços</a>
+<a class="text-on-surface-variant font-label-caps hover:text-primary transition-colors duration-200" href="#diferenciais">Atendimento</a>
+<a class="bg-primary text-white font-cta px-6 py-3 border-2 border-on-background emergency-shadow hover:translate-x-[1px] hover:translate-y-[1px] hover:shadow-none transition-all" href="tel:11965887315">
+                    WhatsApp
+                </a>
+</div>
+<!-- Mobile Action -->
+<div class="md:hidden">
+<a class="bg-primary text-white p-3 border-2 border-on-background" href="https://wa.me/5511965887315">
+<span class="material-symbols-outlined">chat</span>
+</a>
+</div>
+</div>
+</nav>
+<main class="pt-20">
+<!-- Hero Section -->
+<section class="relative min-h-[90vh] flex items-center overflow-hidden border-b-2 border-on-background">
+<div class="grid grid-cols-1 md:grid-cols-12 w-full max-w-container-max mx-auto px-margin-mobile md:px-gutter">
+<div class="md:col-span-7 py-stack-lg z-10 flex flex-col justify-center">
+<div class="inline-flex items-center gap-2 mb-stack-sm">
+<span class="live-pulse"></span>
+<span class="font-label-caps text-primary uppercase">Atendimento 24h Vila Olímpia</span>
+</div>
+<h1 class="font-display text-display-mobile md:text-display mb-stack-md">
+                        Soluções técnicas <br/>
+<span class="text-primary">rápidas e seguras</span> <br/>
+                        para você.
+                    </h1>
+<p class="font-body-lg text-on-surface-variant mb-stack-lg max-w-lg">
+                        Atendimento especializado na Vila Olímpia, Itaim Bibi e Brooklin. Disponibilidade total para emergências elétricas residenciais e comerciais.
+                    </p>
+<div class="flex flex-col sm:flex-row gap-4">
+<a class="bg-primary text-white font-cta px-8 py-5 text-center border-2 border-on-background emergency-shadow hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-none transition-all flex items-center justify-center gap-3" href="https://wa.me/5511965887315">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">chat</span>
+                            Chamar no WhatsApp (11) 96588-7315
+                        </a>
+</div>
+</div>
+<div class="md:col-span-5 relative min-h-[400px] md:min-h-full">
+<div class="absolute inset-0 border-l-2 md:border-l-2 border-on-background hidden md:block"></div>
+<div class="h-full w-full bg-surface-container-highest overflow-hidden">
+<img alt="Eletricista técnico trabalhando em painel elétrico com ferramentas de precisão na Vila Olímpia" class="w-full h-full object-cover grayscale contrast-125" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBqDmFuSAdvBxfMfwo8BrLz5LibmyPzI9lAD7dbF05kSNM8AVg-OeEsazeaucwsbkSRkpcdGus6tH6PUaXFhDOUl_GoOeVw4M-ClplhD_aiNqrEc_l70-WpxZpG9AHmwsvZi1A4dKmK9sqa3ub_wo2RuJGUUFy7IyL-L29ZDRliDHd10tPWsNerf1ch9uQDPECVUneKhxMOOUojge-KALYSnXLh7gYnMr1ro-140WFtws7W1JI1k5l3_zEZWDrRFc-yfmHLH5WfO98"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Serviços Section (Bento Style) -->
+<section class="py-section-padding bg-surface" id="servicos">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-gutter">
+<div class="flex flex-col md:flex-row justify-between items-end mb-stack-lg gap-4">
+<div>
+<span class="font-label-caps text-on-surface-variant">Manutenção & Instalação</span>
+<h2 class="font-display text-headline-lg-mobile md:text-headline-lg uppercase mt-2">Nossas Soluções Técnicas</h2>
+</div>
+<div class="h-[2px] flex-grow bg-on-background mx-gutter hidden md:block opacity-10"></div>
+<p class="font-label-caps max-w-xs text-right hidden md:block">Engenharia elétrica aplicada com rigor técnico.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+<!-- Card 1 -->
+<div class="bento-card p-stack-md md:col-span-2">
+<span class="material-symbols-outlined text-primary text-4xl mb-4">bolt</span>
+<h3 class="font-display text-2xl font-bold mb-2">Curtos-circuitos</h3>
+<p class="font-body-md text-on-surface-variant">Identificação e reparo imediato de falhas elétricas críticas para evitar incêndios e danos estruturais.</p>
+</div>
+<!-- Card 2 -->
+<div class="bento-card p-stack-md">
+<span class="material-symbols-outlined text-primary text-4xl mb-4">settings_input_component</span>
+<h3 class="font-display text-2xl font-bold mb-2">Painéis</h3>
+<p class="font-body-md text-on-surface-variant">Montagem e modernização de quadros de força residenciais.</p>
+</div>
+<!-- Card 3 -->
+<div class="bento-card p-stack-md">
+<span class="material-symbols-outlined text-primary text-4xl mb-4">verified_user</span>
+<h3 class="font-display text-2xl font-bold mb-2">Preventiva</h3>
+<p class="font-body-md text-on-surface-variant">Check-ups completos para garantir a segurança do imóvel.</p>
+</div>
+<!-- Card 4 -->
+<div class="bento-card p-stack-md md:col-span-2">
+<span class="material-symbols-outlined text-primary text-4xl mb-4">electrical_services</span>
+<h3 class="font-display text-2xl font-bold mb-2">Troca de Fiação</h3>
+<p class="font-body-md text-on-surface-variant">Substituição de fiação antiga por materiais normatizados de alta condutividade e segurança térmica.</p>
+</div>
+<!-- Card 5 (Large CTA) -->
+<div class="bg-on-background p-stack-md md:col-span-2 flex flex-col justify-between text-white">
+<div>
+<h3 class="font-display text-3xl font-bold mb-4">Precisa de um orçamento agora?</h3>
+<p class="font-body-md opacity-80">Atendimento imediato pelo WhatsApp. Envie uma foto do seu quadro elétrico para uma pré-avaliação rápida.</p>
+</div>
+<a class="mt-6 flex items-center justify-between group" href="https://wa.me/5511965887315">
+<span class="font-cta text-xl">FALAR COM TÉCNICO</span>
+<span class="material-symbols-outlined group-hover:translate-x-2 transition-transform">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- Diferenciais Section -->
+<section class="py-section-padding bg-on-background text-white" id="diferenciais">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-gutter">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-stack-lg text-center">
+<div class="flex flex-col items-center">
+<div class="w-16 h-16 border-2 border-primary flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-primary text-3xl">timer</span>
+</div>
+<h4 class="font-display text-xl font-bold mb-2 uppercase tracking-tight">Atendimento Rápido</h4>
+<p class="font-body-md opacity-70">Chegada prevista em até 40 minutos na região da Vila Olímpia e arredores.</p>
+</div>
+<div class="flex flex-col items-center">
+<div class="w-16 h-16 border-2 border-primary flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-primary text-3xl" style="font-variation-settings: 'FILL' 1;">gpp_good</span>
+</div>
+<h4 class="font-display text-xl font-bold mb-2 uppercase tracking-tight">Segurança Garantida</h4>
+<p class="font-body-md opacity-70">Serviços executados dentro das normas técnicas NBR 5410 com laudo técnico.</p>
+</div>
+<div class="flex flex-col items-center">
+<div class="w-16 h-16 border-2 border-primary flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-primary text-3xl">engineering</span>
+</div>
+<h4 class="font-display text-xl font-bold mb-2 uppercase tracking-tight">Profissionais Qualificados</h4>
+<p class="font-body-md opacity-70">Equipe treinada, equipada com EPIs e ferramentas de medição de última geração.</p>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-on-background text-surface pt-section-padding border-t-2 border-primary">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-gutter pb-stack-lg">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-stack-lg">
+<div class="md:col-span-4">
+<div class="flex items-center gap-3 mb-6">
+<img alt="Logo" class="h-10 w-10 brightness-0 invert" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDxpi48BhT0TLSKYKfssY4SdeHQA1rTGI-J5dDcDmn0Di2-ZzXbRB1Yd-bc2pmuFy1dLGRz-qTkBXifKHRLig2jM1EHLcATWC30TH1pmr8bWJgPdrbfJOSMVstrBAh4klmxLCQW6aYA9wuRw40BND89KJX439t0kaz6Z1-onMj9DQbAp9ZFDzOS9lHP5CCPxUhyMsq81z-itPbgLTJnJsHNy33TfZoQpkXqEWBhWOpW9yW_Pnx6t52vXeDF_VX8i4-VouHJV5X0tA8"/>
+<span class="font-display text-2xl font-bold tracking-tighter">ELETRO-VILA</span>
+</div>
+<p class="font-body-md opacity-60 mb-6">Sua referência em serviços elétricos de emergência na Zona Sul de São Paulo. Qualidade técnica e rapidez em primeiro lugar.</p>
+</div>
+<div class="md:col-span-3">
+<h5 class="font-label-caps text-primary mb-6">Atendimento</h5>
+<ul class="space-y-4 font-body-md">
+<li class="flex items-center gap-2">
+<span class="w-1 h-1 bg-primary"></span> Vila Olímpia
+                        </li>
+<li class="flex items-center gap-2">
+<span class="w-1 h-1 bg-primary"></span> Brooklin
+                        </li>
+<li class="flex items-center gap-2">
+<span class="w-1 h-1 bg-primary"></span> Itaim Bibi
+                        </li>
+</ul>
+</div>
+<div class="md:col-span-5">
+<h5 class="font-label-caps text-primary mb-6">Contato Direto</h5>
+<div class="space-y-4">
+<a class="flex items-center gap-4 hover:text-primary transition-colors" href="tel:11965887315">
+<span class="material-symbols-outlined">call</span>
+<span class="text-2xl font-display font-bold">(11) 96588-7315</span>
+</a>
+<p class="font-body-md opacity-60">Disponível agora para chamados emergenciais.</p>
+<div class="pt-4">
+<a class="inline-block bg-white text-on-background font-cta px-6 py-3 border-2 border-primary hover:bg-primary hover:text-white transition-all" href="https://wa.me/5511965887315">
+                                ENVIAR MENSAGEM
+                            </a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="border-t border-white/10">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-gutter py-8 flex flex-col md:flex-row justify-between items-center gap-4">
+<span class="font-label-caps text-sm opacity-40">© 2024 Eletro-Vila Olímpia. 24h Emergency Service.</span>
+<div class="flex gap-stack-md font-label-caps text-sm opacity-40">
+<a class="hover:opacity-100 transition-opacity" href="#">Termos</a>
+<a class="hover:opacity-100 transition-opacity" href="#">Privacidade</a>
+</div>
+</div>
+</div>
+</footer>
+<!-- Sticky Mobile CTA -->
+<div class="fixed bottom-0 left-0 right-0 md:hidden z-50 px-margin-mobile py-4 bg-background/80 backdrop-blur-md border-t-2 border-on-background">
+<a class="bg-primary text-white font-cta w-full py-4 flex items-center justify-center gap-3 border-2 border-on-background emergency-shadow" href="https://wa.me/5511965887315">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">chat</span>
+            AGENDAR AGORA
+        </a>
+</div>
+<script>
+        // Simple intersection observer for reveal animations
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('opacity-100');
+                    entry.target.classList.remove('opacity-0', 'translate-y-4');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.bento-card').forEach(card => {
+            card.classList.add('opacity-0', 'translate-y-4', 'transition-all', 'duration-500');
+            observer.observe(card);
+        });
+    </script>
+</body></html>
